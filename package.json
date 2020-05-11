@@ -1,10 +1,13 @@
 {
   "name": "wtc-tween",
-  "version": "1.0.0",
+  "version": "1.0.6",
   "description": "wtc-tween provides a way to create simple tweens without the need for a massive library.",
-  "main": "dist/index.js",
+  "source": "src/wtc-tween.js",
+  "main": "dist/wtc-tween.umd.js",
+  "module": "dist/wtc-tween.module.js",
   "scripts": {
-    "build": "webpack --config webpack.config.js",
+    "build": "microbundle",
+    "dev": "microbundle watch",
     "prepare": "npm run build"
   },
   "repository": {
@@ -19,14 +22,6 @@
   },
   "homepage": "https://github.com/wethegit/wtc-tween#readme",
   "devDependencies": {
-    "@babel/core": "^7.9.6",
-    "@babel/preset-env": "^7.9.6",
-    "babel-loader": "^8.1.0",
-    "jsdoc-to-markdown": "^5.0.3",
-    "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11"
-  },
-  "dependencies": {
-    "core-js": "^3.6.5"
+    "microbundle": "^0.12.0"
   }
 }
