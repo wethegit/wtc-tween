@@ -80,14 +80,18 @@ This library also comes with some basic easing functions included but feel free 
 
 ## ES5 and browsers
 
-You can also use this in the browser but you will still need `node` and `npm`.
+You can also use this in the browser but you will still need `node` and `npm` to compile this project.
 
 1. Clone this repo
 2. `cd` into the directory
 3. Install deps with `npm i`
 4. Build the lib with `npm run build`
 
-For older browsers use `wtc-tween.umd.js`
+The files will be compiled to the `dist/` folder.
+
+### Older browsers (no module)
+
+For older browsers use the file `dist/wtc-tween.umd.js`
 
 ```html
 <script src="./wtc-tween.umd.js"></script>
@@ -105,7 +109,9 @@ For older browsers use `wtc-tween.umd.js`
 </script>
 ```
 
-If targetting only browsers that support Modules, use `wtc-tween.modern.js`:
+### Newer browsers (module)
+
+If targetting browsers that support modules, use `dist/wtc-tween.modern.js`:
 
 ```html
 <script type="module">
