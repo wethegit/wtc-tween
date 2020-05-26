@@ -1,12 +1,16 @@
 import { linear } from "./easings.js";
 import { clamp, lerp } from "./utils.js";
 
+const DEFAULT_OPTIONS = { duration: 1000, timingFunction: linear };
+
 export default function tween(
-  from,
-  to,
-  callback,
-  options = { duration: 1000, timingFunction: linear }
+  from = 0,
+  to = 1,
+  callback = null,
+  options = {}
 ) {
+  options = Object.assign({}, DEFAULT_OPTIONS, options);
+  
   if (
     from === undefined ||
     (typeof from !== "number" && typeof from !== "object")
