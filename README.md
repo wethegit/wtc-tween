@@ -50,6 +50,13 @@ tween([0, 50, 2100], [1, 200, 1000], (value) => {
 });
 ```
 
+### Cancel tween
+```js
+const mytween = tween(0,1);
+// whenever you need to cancel
+cancelAnimationFrame(mytween);
+```
+
 ### With options
 
 ```js
