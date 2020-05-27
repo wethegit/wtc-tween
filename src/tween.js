@@ -1,7 +1,7 @@
 import { linear } from "./easings.js";
 import { clamp, lerp } from "./utils.js";
 
-const DEFAULT_OPTIONS = { duration: 1000, timingFunction: linear };
+const DEFAULT_OPTIONS = { duration: 1000, timingFunction: linear, onComplete: null };
 
 export default function tween(
   from = 0,
@@ -35,6 +35,8 @@ export default function tween(
 
     if (delta - starttime < options.duration)
       return requestAnimationFrame(tweener);
+    else if (options.onComplete)
+      options.onComplete();
   };
 
   return requestAnimationFrame(tweener);
