@@ -25,7 +25,7 @@ Receives the _Number_|_Array[Numbers]_ current value.
 The duration in miliseconds for the tween.  
 **options.timingFunction**: _Function_ - default `easings.linear`  
 The timing function to be used by the tween.
-**options.onComplete**: _Function_ - default `null`
+**options.onComplete**: _Function_ - default `null`  
 A function to be called after completion of the tween.
 
 ## Examples
