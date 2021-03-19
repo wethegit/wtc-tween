@@ -1,10 +1,13 @@
 {
   "name": "wtc-tween",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "wtc-tween provides a way to create simple tweens without the need for a massive library.",
   "source": "src/wtc-tween.js",
   "main": "dist/wtc-tween.umd.js",
   "module": "dist/wtc-tween.module.js",
+  "exports": {
+    ".": "./dist/wtc-tween.modern.js"
+  },
   "scripts": {
     "build": "microbundle",
     "dev": "microbundle watch",
