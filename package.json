@@ -1,6 +1,6 @@
 {
   "name": "wtc-tween",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "wtc-tween provides a way to create simple tweens without the need for a massive library.",
   "source": "src/wtc-tween.js",
   "main": "dist/wtc-tween.umd.js",
