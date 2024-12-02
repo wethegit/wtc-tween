@@ -26,6 +26,6 @@
   "homepage": "https://github.com/wethegit/wtc-tween#readme",
   "devDependencies": {
     "microbundle": "^0.15.1",
-    "prettier": "~3.3.3"
+    "prettier": "~3.4.1"
   }
 }
